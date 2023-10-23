@@ -1,0 +1,86 @@
+:root {
+  --sudoku-window-width: none;
+  --sudoku-window-buttons-width: 255px;
+  --sudoku-cell-width: 50px;
+  --sudoku-cell-height: 50px;
+  --sudoku-cell-border: 1px solid rgba(0, 0, 0, 0.411);
+  --sudoku-cell-bold-border: 1px solid black;
+}
+
+.container--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-100perc {
+  width: 100%;
+}
+
+.h-100perc {
+  height: 100%;
+}
+
+.sudoku__group__example {
+  display: none !important;
+}
+
+.sudoku__window {
+  background: rgba(211, 211, 211, 0.164);
+  width: var(--sudoku-window-width);
+  padding: 16px;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.sudoku__window__buttons {
+  width: var(--sudoku-window-buttons-width);
+  margin-left: 16px;
+}
+
+.sudoku {
+  /* background: rgba(211, 211, 211, 0.164); */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: var(--sudoku-cell-bold-border);
+}
+
+.sudoku__group {
+  display: grid;
+  grid-template-columns: var(--sudoku-cell-width) var(--sudoku-cell-width) var(--sudoku-cell-width);
+  grid-template-rows: var(--sudoku-cell-height) var(--sudoku-cell-height) var(--sudoku-cell-height);
+}
+
+.sudoku__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  border: var(--sudoku-cell-border);
+  border-right: none;
+  border-bottom: none;
+}
+
+.sudoku__cell.selected {
+  background-color: #277fe348;
+}
+
+.sudoku__cell.with-right-border {
+  border-right: var(--sudoku-cell-bold-border);
+}
+
+.sudoku__cell.with-bottom-border {
+  border-bottom: var(--sudoku-cell-bold-border);
+}

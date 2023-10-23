@@ -1,0 +1,65 @@
+<html>
+
+<head>
+
+  <title>Sudoku GUI</title>
+
+  <link rel="stylesheet" href="demo/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="demo/css/bootstrap.css">
+  <link rel="stylesheet" href="demo/css/main.css">
+
+
+</head>
+
+<body>
+
+  <div class="container--center w-100perc h-100perc">
+
+    <div class="sudoku__window">
+
+      <h1>
+        Sudoku
+      </h1>
+
+      <div class="flex-row">
+
+        <div id="sudoku" class="sudoku flex-grow-1">
+
+          <div class="sudoku__group sudoku__group__example">
+
+            <div class="sudoku__cell">1</div>
+            <div class="sudoku__cell selected">2</div>
+            <div class="sudoku__cell with-right-border">3</div>
+            <div class="sudoku__cell">4</div>
+            <div class="sudoku__cell">5</div>
+            <div class="sudoku__cell with-right-border">6</div>
+            <div class="sudoku__cell with-bottom-border">7</div>
+            <div class="sudoku__cell with-bottom-border">8</div>
+            <div class="sudoku__cell with-right-border with-bottom-border">9</div>
+
+          </div>
+
+        </div>
+
+        <div class="sudoku__window__buttons flex-col gap-1">
+
+          <button type="button" class="btn btn-primary">Novo sudoku</button>
+          <button type="button" class="btn btn-primary">Resolver sudoku</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="demo/js/bootstrap.bundle.min.js"></script>
+  <script src="dist/sudoku.js"></script>
+  <script src="demo/js/util.js"></script>
+  <script src="demo/js/main.js"></script>
+
+</body>
+
+</html>
